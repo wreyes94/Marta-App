@@ -1,0 +1,4 @@
+Run:
+ - npm install
+ - npm start
+ - npm run test (to run test cases)

@@ -1,0 +1,29 @@
+{
+  "name": "martaapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.0.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "http-server": "^0.12.1",
+    "morgan": "~1.9.1",
+    "request": "2.88.0"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "mocha": "7.0.0 || true",
+    "chai": "4.2.0",
+    "supertest": "4.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

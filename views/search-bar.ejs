@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Marta app</title>
+    <style>
+        .container {
+            margin: 30px 20%;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: deepskyblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            height: 20px;
+            width: 30%;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .output1 {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<script>
+    var allBuses = "<%=allBuses%>";
+    var cleanBussesArray = JSON.parse(allBuses.split('&#34;').join('"'));
+    console.log('Output1: ' + JSON.stringify(cleanBussesArray));
+</script>
+<body>
+<div class="container">
+    <form action="/submit-bus-route" method="post">
+        <h2>Output 1</h2>
+        <div class="output1">
+            Look at console log
+        </div>
+        <h2>Output 2:</h2>
+        <div class="title"> Enter Bus Route Number:</div>
+        <input class="search-bar" name="busRoute" type="number" /> <br>
+        <input class="submit-button" type="submit" />
+    </form>
+</div>
+</body>
+</html>
