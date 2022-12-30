@@ -19,7 +19,7 @@
   },
   "main": "app.js",
   "devDependencies": {
-    "mocha": "7.0.0 || true",
+    "mocha": "10.2.0",
     "chai": "4.2.0",
     "supertest": "4.0.2"
   },
